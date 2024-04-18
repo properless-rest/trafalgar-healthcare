@@ -1,0 +1,39 @@
+
+:root {
+    --service-bg: #FEFEFE;
+    --service-bg-hover: rgba(240, 240, 240, 0.75);
+    --service-description: #7D7987;
+}
+
+.service {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-row-gap: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: var(--service-bg);
+    /* box-shadow: 10px 40px 50px #E5E9F6; */
+    cursor: pointer;
+    z-index: 1;
+}
+
+.service .service-image {
+    margin-top: 21px;
+}
+
+.service:hover {
+    background-color: var(--service-bg-hover);
+}
+
+.service .servive-title {
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.service .service-description {
+    line-height: 28px;;
+    color: var(--service-description);
+}

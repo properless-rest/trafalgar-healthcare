@@ -1,0 +1,92 @@
+
+:root {
+    --gradient-color-1: #67C3F3;
+    --gradient-color-2: #5A98F2;
+    --tablet-text: #FFFFFF;
+}
+
+.section-customers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+}
+
+.section-customers .customer-tablet {
+    display:flex;
+    flex-direction: column;
+    padding: 65px 120px 80px;
+    color: var(--tablet-text);
+    background-image: linear-gradient(var(--gradient-color-1), var(--gradient-color-2));
+    border: 1px solid var(--gradient-color-2);
+    border-radius: 24px;
+    z-index: 1;
+}
+
+.customer-tablet .customers-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.customer-tablet .img-separator {
+    height: 3px;
+    margin: 30px auto 60px;
+}
+
+.customer-tablet .div-customer-comment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-customer-comment .div-customer-profile {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 30px;
+}
+
+.div-customer-profile .customers-avatar {
+    width: 130px;
+    border: 3px solid var(--tablet-text);
+    border-radius: 50%;
+    background-color: rgb(230, 230, 30);
+}
+
+.div-customer-data {
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+}
+
+.div-customer-data .customer-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.div-customer-data .customer-job {
+    font-size: 18px;
+}
+
+.div-customer-comment .customer-comment {
+    max-width: 420px;
+    text-align: justify;
+}
+
+.scroller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 90px;
+    margin-top: 40px;
+}
+
+.scroller .scroller-dots {
+    display: flex;
+    grid-column-gap: 18px;
+}
+
+.scroller .arrow,
+.scroller-dots .dot {
+    cursor: pointer;
+}

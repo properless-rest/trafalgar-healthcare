@@ -1,0 +1,97 @@
+
+
+:root {
+    --footer-bg-gradient-1: #67C3F3;
+    --footer-bg-gradient-2: #5A98F2;
+    --footer-logo: #5B9BF3;
+    --footer-logo-bg: #FFF;
+    --footer-text: #FFF;
+    --link-hover: #F0F0F0;
+}
+
+footer {
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+    height: 430px;
+    padding: 110px 180px;
+    display: flex;
+    background-image: linear-gradient(var(--footer-bg-gradient-1), var(--footer-bg-gradient-2));
+    color: var(--footer-text);
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+footer .column-trafalgar {
+    min-width: 400px;
+    margin-right: 145px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .div-trafalgar {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 12px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.div-trafalgar .footer-logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    color: var(--footer-logo);
+    background-color: var(--footer-logo-bg);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.column-trafalgar .footer-description {
+    margin: 22px 0 30px;
+    text-align: justify;
+}
+
+
+.column-trafalgar .footer-copyright {
+    font-size: 16px;
+}
+
+.column-company,
+.column-region,
+.column-help {
+    display: flex;
+    flex-direction: column;
+    margin-right: 170px;
+}
+
+.column-header {
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-link {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--footer-text);
+    transition: color 0.2s linear;
+    white-space: nowrap;
+}
+
+.footer-link:hover {
+    color: var(--link-hover);
+}
+
+.bg-dots8 {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    z-index: 2;
+}
+  

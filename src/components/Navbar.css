@@ -1,0 +1,72 @@
+
+:root {
+    --nav-icon-bg: #458FF6;
+    --nav-logo: #233348;
+    --nav-link: #1F1534;
+    --nav-link-home: #1A1A1A;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+nav .nav-div-logo {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 24px;
+}
+
+.nav-div-logo .nav-logo-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--nav-icon-bg);
+    font-size: 26px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.nav-div-logo .nav-logo-name {
+    color: var(--nav-logo);
+    font-size: 24px;
+}
+
+.nav-div-menu {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 24px;
+}
+
+.nav-div-menu .nav-link {
+    color: var(--nav-link);
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid var(--bg);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.nav-div-menu .nav-link:hover {
+    border-color: #000;
+}
+
+.nav-div-menu .link-home {
+    color: var(--nav-link-home);
+    font-weight: 600;
+}
+
+.nav-div-menu .link-selected  {
+    font-weight: 700;
+    text-shadow: 
+    -0.2px -0.2px 0 #000,  
+    0.2px -0.2px 0 #000,
+    -0.2px 0.2px 0 #000,
+    0.2px 0.2px 0 #000;
+}

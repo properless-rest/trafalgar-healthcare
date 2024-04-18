@@ -1,0 +1,127 @@
+
+@font-face {
+  font-family: "Muli-light";
+  src: url("./fonts/muli/Muli-Light.ttf");
+}
+
+@font-face {
+  font-family: "Muli-regular";
+  src: url("./fonts/muli/Muli-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Muli-semibold";
+  src: url("./fonts/muli/Muli-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Muli-bold";
+  src: url("./fonts/muli/Muli-Bold.ttf");
+}
+
+
+:root {
+  --bg: #FAFAFA;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  background-color: var(--bg);
+  font-family: "Muli-regular";
+}
+
+
+h1, h2, h3,
+h4, h5, h6,
+p {
+  margin: 0
+}
+
+img {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .visibility {
+    display: none;
+  }
+}
+
+.bg-dots {
+  height: 90px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  z-index: 0;
+}
+
+.bg-dots2 {
+  width: 130px;
+  height: 115px;
+  position: absolute;
+  top: 1425px;
+  left: 1250px;
+  z-index: 0;
+}
+
+
+.blob {
+  position: absolute;
+  top: 965px;
+  left: -265px;
+  z-index: 0;
+}
+
+.bg-dots3 {
+  width: 75px;
+  position: absolute;
+  top: 2700px;
+  right: 0;
+  z-index: 0;
+}
+
+
+.bg-dots4 {
+  width: 120px;
+  position: absolute;
+  top: 3900px;
+  left: 60px;
+  z-index: 0;
+}
+
+.bg-dots5 {
+  position: absolute;
+  top: 3570px;
+  right: 125px;
+  z-index: 2;
+}
+
+.blob2 {
+  position: absolute;
+  top: 4250px;
+  right: 0;
+  z-index: 0;
+}
+
+.bg-dots6 {
+  position: absolute;
+  top: 4410px;
+  left: 110px;
+  z-index: 0;
+}
+
+.bg-dots7 {
+  width: 120px;
+  position: absolute;
+  top: 5125px;
+  right: 125px;
+  z-index: 0;
+}
+
+/* bg-dots8 is inside Footer Component */

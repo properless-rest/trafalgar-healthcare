@@ -1,0 +1,51 @@
+
+:root {
+    --articles-btn: #458FF6;
+    --articles-btn-hover: rgba(50, 100, 200);
+}
+
+.section-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 215px;
+}
+
+.section-articles .articles-title {
+    font-size: 36px;
+    font-weight: 700px;
+}
+
+.section-articles .img-separator {
+    height: 3px;
+    margin: 25px 0 80px;
+}
+
+.section-articles .articles-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 34px;
+    margin: 0 50px;
+}
+
+.section-articles .articles-btn {
+    margin: 72px;
+    padding: 20px 65px;
+    border: 1.5px solid var(--articles-btn);
+    border-radius: 55px;
+    color: var(--articles-btn);
+    background-color: var(--bg);
+    font-family: "Muli";
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section-articles .articles-btn:hover {
+    color: var(--articles-btn-hover);
+    border-color: var(--articles-btn-hover);
+}
+
+.section-articles .articles-btn:active {
+    transform: scale(0.98);
+}

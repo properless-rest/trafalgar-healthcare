@@ -1,0 +1,61 @@
+
+:root {
+    --service-title: #000;
+    --sevice-description: #7D7987;
+    --services-btn: #458FF6;
+}
+
+.section-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 190px;
+    /* background-color: red; */
+}
+
+.section-services .services-title {
+    color: var(--service-title);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section-services .img-separator {
+    height: 3px;
+    margin: 25px 0 30px;
+}
+
+.section-services .services-description {
+    max-width: 975px;
+    color: var(--sevice-description);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.section-services .service-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 37px;
+    grid-column-gap: 34px;
+    margin: 80px 0 70px;
+}
+
+.section-services .services-btn {
+    padding: 21px 50px;
+    border: 1.5px solid var(--services-btn);
+    border-radius: 55px;
+    color: var(--services-btn);
+    font-family: "Muli";
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section-services .services-btn:hover {
+    opacity: 0.75;
+}
+
+.section-services .services-btn:active {
+    transform: scale(0.98);
+}

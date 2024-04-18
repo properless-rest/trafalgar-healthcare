@@ -1,0 +1,62 @@
+
+:root {
+    --hero-title: #000;
+    --hero-text: #7D7987;
+    --hero-btn: #FFF;
+    --hero-btn-bg: rgb(69, 143, 246);
+    --hero-btn-bg-hover: rgb(69, 143, 246, 0.75);
+}
+
+.hero {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    grid-column-gap: 100px;
+    margin-top: 85px;
+}
+
+.hero .hero-advertiser {
+    max-width: 450px;
+    margin-top: 106px;
+}
+
+.hero .hero-image {
+    height: 100%;
+}
+
+.hero-advertiser .hero-title {
+    color: var(--hero-title);
+    line-height: 56px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-advertiser .hero-text {
+    margin: 25px 0 45px;
+    color: var(--hero-text);
+    line-height: 32px;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.hero-advertiser .hero-btn {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 55px;
+    color: var(--hero-btn);
+    background-color: var(--hero-btn-bg);
+    font-family: "Muli";
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color, 0.2s;
+}
+
+.hero-advertiser .hero-btn:hover {
+    background-color: var(--hero-btn-bg-hover);
+}
+
+.hero-advertiser .hero-btn:active {
+    transform: scale(0.98);
+}

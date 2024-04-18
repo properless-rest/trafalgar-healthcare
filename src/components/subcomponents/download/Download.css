@@ -1,0 +1,62 @@
+
+:root {
+    --download-description: #7D7987;
+    --download-btn: rgb(69, 143, 246);
+    --download-btn-hover: rgba(50, 100, 200);
+}
+
+.section-download {
+    display: flex;
+    grid-column-gap: 70px;
+    margin-top: 230px;
+    margin-left: 150px;
+}
+
+.section-download .div-download-advertiser {
+    max-width: 420px;
+    margin-top: 36px;
+}
+
+.div-download-advertiser .download-title {
+    max-width: 250px;
+    line-height: 48px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.div-download-advertiser .img-separator {
+    height: 3px;
+    margin: 30px 0;
+}
+
+.div-download-advertiser .download-description {
+    text-align: justify;
+    color: var(--download-description);
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.div-download-advertiser .download-btn {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 15px;
+    padding: 20px 42px;
+    margin-top: 40px;
+    border: 1.5px solid var(--download-btn);
+    border-radius: 55px;
+    color: var(--download-btn);
+    background-color: var(--bg);
+    font-family: "Muli";
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.div-download-advertiser .download-btn:hover {
+    color: var(--download-btn-hover);
+    border-color: var(--download-btn-hover);
+}
+
+.div-download-advertiser .download-btn:active {
+    transform: scale(0.98);
+}

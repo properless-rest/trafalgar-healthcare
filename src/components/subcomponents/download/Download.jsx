@@ -11,7 +11,7 @@ export default function Download() {
     return (
         <section className="section-download">
             <div className="div-download-advertiser">
-                <h3 className="download-title">Download our mobile apps</h3>
+                <h3 className="download-title">Download our mobile&nbsp;apps</h3>
                 <img className="img-separator" src={rectangle} alt="Rectangle separator" />
                 <p className="download-description">
                     Our dedicated patient engagement app and web portal allow you to access information instantaneously 
@@ -27,7 +27,7 @@ export default function Download() {
                     </svg>
                 </button>
             </div>
-            <img src={downloadImage} alt ="Download section image" />
+            <img className="download-image" src={downloadImage} alt ="Download section image" />
         </section>
     );
 }

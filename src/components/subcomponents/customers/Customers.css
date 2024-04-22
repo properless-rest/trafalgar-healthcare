@@ -5,7 +5,24 @@
     --tablet-text: #FFFFFF;
 }
 
+.bg-dots4 {
+    position: absolute;
+    width: 120px;
+    bottom: 90px;
+    left: -45px;
+    z-index: 1;
+  
+  }
+  
+  .bg-dots5 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
 .section-customers {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 250px;
@@ -49,10 +66,10 @@
     width: 130px;
     border: 3px solid var(--tablet-text);
     border-radius: 50%;
-    background-color: rgb(230, 230, 30);
+    background-color: rgb(200, 200, 160);
 }
 
-.div-customer-data {
+.div-customer-profile .div-customer-data {
     min-width: 190px;
     display: flex;
     flex-direction: column;
@@ -71,6 +88,7 @@
 .div-customer-comment .customer-comment {
     max-width: 420px;
     text-align: justify;
+    font-size: 21px;
 }
 
 .scroller {
@@ -89,4 +107,189 @@
 .scroller .arrow,
 .scroller-dots .dot {
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .section-customers {
+        margin-top: 50px;
+    }
+
+    .section-customers .customer-tablet {
+        display:flex;
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    .customer-tablet .customers-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .customer-tablet .img-separator {
+        height: 3px;
+        margin: 12px auto;
+    }
+
+    .customer-tablet .div-customer-comment {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
+        grid-row-gap: 10px;
+    }
+
+    .div-customer-comment .div-customer-profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .div-customer-profile .customers-avatar {
+        display: none;
+    }
+
+    .div-customer-profile .div-customer-data {
+        min-width: initial;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 6px;
+    }
+
+    .div-customer-comment .customer-comment {
+        align-self: center;
+        padding: 5px;
+        max-width: 420px;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .scroller {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 50px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (min-width: 600.02px) and (max-width: 1023.98px) {
+
+    .section-customers {
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+
+    .section-customers .customer-tablet {
+        display:flex;
+        flex-direction: column;
+        padding: 25px 20px;
+    }
+
+    .customer-tablet .customers-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .customer-tablet .img-separator {
+        height: 3px;
+        margin: 20px auto;
+    }
+    
+    .customer-tablet .div-customer-comment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 14px;
+
+    }
+
+    .div-customer-comment .div-customer-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .div-customer-profile .customers-avatar {
+        width: 110px;
+    }
+
+    .div-customer-profile .div-customer-data {
+        min-width: 190px;
+        display: flex;
+        grid-row-gap: 10px;
+    }
+
+    .div-customer-data .customer-name {
+        font-size: 28px;
+    }
+
+    
+    .div-customer-data .customer-job {
+        font-size: 24px;
+    }
+
+    .div-customer-comment .customer-comment {
+        padding: 5px;
+        max-width: 750px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px) {
+
+    .section-customers {
+        margin-top: 180px;
+    }
+
+    .section-customers .customer-tablet {
+        padding: 45px 55px;
+        color: var(--tablet-text);
+    }
+
+    .customer-tablet .img-separator {
+        height: 3px;
+        margin: 30px auto;
+    }
+
+    .customer-tablet .div-customer-comment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column-gap: 20px;
+    }
+
+    .div-customer-comment .div-customer-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 20px;
+    }
+
+
+    .div-customer-profile .div-customer-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 8px;
+    }
+
+    .div-customer-data .customer-name {
+        font-size: 26px;
+    }
+
+    
+    .div-customer-data .customer-job {
+        font-size: 22px;
+    }
+
 }

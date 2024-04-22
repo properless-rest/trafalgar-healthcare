@@ -36,7 +36,6 @@ html, body {
   font-family: "Muli-regular";
 }
 
-
 h1, h2, h3,
 h4, h5, h6,
 p {
@@ -45,12 +44,6 @@ p {
 
 img {
   pointer-events: none;
-}
-
-@media screen and (max-width: 1199px) {
-  .visibility {
-    display: none;
-  }
 }
 
 .bg-dots {
@@ -66,10 +59,9 @@ img {
   height: 115px;
   position: absolute;
   top: 1425px;
-  left: 1250px;
+  right: 10px;
   z-index: 0;
 }
-
 
 .blob {
   position: absolute;
@@ -86,21 +78,8 @@ img {
   z-index: 0;
 }
 
+/* bg-dots4 and bg-dots5 are inside Customers SubComponent */
 
-.bg-dots4 {
-  width: 120px;
-  position: absolute;
-  top: 3900px;
-  left: 60px;
-  z-index: 0;
-}
-
-.bg-dots5 {
-  position: absolute;
-  top: 3570px;
-  right: 125px;
-  z-index: 2;
-}
 
 .blob2 {
   position: absolute;
@@ -109,19 +88,69 @@ img {
   z-index: 0;
 }
 
-.bg-dots6 {
-  position: absolute;
-  top: 4410px;
-  left: 110px;
-  z-index: 0;
-}
+/* bg-dots6 is inside Articles SubComponent: inside grid container */
 
 .bg-dots7 {
   width: 120px;
   position: absolute;
-  top: 5125px;
+  top: 5155px;
   right: 125px;
   z-index: 0;
 }
 
 /* bg-dots8 is inside Footer Component */
+
+@media screen and (max-width: 1023.98px) {
+  /* className visibility used only for images from "index.html" */
+  .visibility {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .bg-dots {
+    height: 75px;
+    display: initial;
+    top: -25px;
+    left: 5px;
+  }
+}
+
+@media screen and (min-width: 600.02px) and (max-width: 992px) {
+  .bg-dots {
+    height: 120px;
+    display: initial;
+    top: -30px;
+    left: 50px;
+    transform: rotate(90deg);
+  }
+}
+
+
+@media screen and (max-width: 1199.98px) {
+
+  .bg-dots2 {
+    display: none;
+  }
+  
+  .bg-dots3 {
+    display: none;
+  }
+
+  .bg-dots6 {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1499.98px) {
+
+  .blob2 {
+    display: none;
+  }
+
+  .bg-dots7 {
+    display: none;
+  }
+
+}

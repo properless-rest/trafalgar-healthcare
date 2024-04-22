@@ -19,6 +19,7 @@ nav .nav-div-logo {
     grid-column-gap: 24px;
 }
 
+
 .nav-div-logo .nav-logo-icon {
     width: 42px;
     height: 42px;
@@ -37,7 +38,7 @@ nav .nav-div-logo {
     font-size: 24px;
 }
 
-.nav-div-menu {
+nav .nav-div-menu {
     display: flex;
     align-items: center;
     grid-column-gap: 24px;
@@ -69,4 +70,66 @@ nav .nav-div-logo {
     0.2px -0.2px 0 #000,
     -0.2px 0.2px 0 #000,
     0.2px 0.2px 0 #000;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        grid-row-gap: 20px;
+    }
+
+    nav .nav-div-logo {
+        grid-column-gap: 10px;;
+    }
+
+    .nav-div-logo .nav-logo-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 30px;
+    }
+
+    .nav-div-logo .nav-logo-name {
+        font-size: 32px;
+    }
+
+    nav .nav-div-menu {
+        width: 90%;
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+
+    .nav-div-menu .nav-link {
+        width: 90%;
+        text-align: center;
+        color: #F5F5F5;
+        background-color: var(--nav-icon-bg);
+    }
+
+    .nav-div-menu .nav-link:active {
+        transform: scale(0.98);
+    }
+}
+
+@media screen and (min-width: 600.02px) and (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        grid-row-gap: 20px;
+    }
+
+    .nav-div-logo .nav-logo-icon {
+        width: 72px;
+        height: 72px;
+        font-size: 32px;
+    }
+
+    .nav-div-logo .nav-logo-name {
+        font-size: 36px;
+    }
+
+    nav .nav-div-menu {
+        grid-column-gap: 13px;
+    }
+
 }

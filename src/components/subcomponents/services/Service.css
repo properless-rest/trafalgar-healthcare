@@ -15,7 +15,7 @@
     padding: 40px;
     border-radius: 20px;
     background-color: var(--service-bg);
-    /* box-shadow: 10px 40px 50px #E5E9F6; */
+    box-shadow: 10px 40px 50px #E5E9F6;
     cursor: pointer;
     z-index: 1;
 }
@@ -36,4 +36,111 @@
 .service .service-description {
     line-height: 28px;;
     color: var(--service-description);
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .service {
+        width: 90%;
+        height: initial;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        grid-column-gap: 25px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .service .service-image {
+        margin: initial;
+    }
+
+    .service .service-description {
+        display: none;
+    }
+
+    .service .servive-title {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 600.02px) and (max-width: 767.98px) {
+
+    .service {
+        width: 300px;
+        height: initial;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        grid-column-gap: 20px;
+        padding: 20px;
+    }
+
+    .service .service-image {
+        width: 80px;
+        margin-top: 0;
+    }
+
+    .service .servive-title {
+        text-align: center;
+    }
+
+    .service .service-description {
+        display: none;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+
+    .service {
+        width: 300px;
+        height: initial;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        grid-column-gap: 20px;
+        padding: 20px;
+    }
+
+    .service .service-image {
+        width: 80px;
+        margin-top: 0;
+    }
+
+    .service .servive-title {
+        display: none;
+    }
+
+    .service .service-description {
+        line-height: 28px;;
+        color: var(--service-description);
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    .service {
+        width: 210px;
+        height: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 25px;
+        padding: 20px;
+    }
+
+    .service .service-image {
+        margin-top: 10px;
+    }
+
+    .service .servive-title {
+        text-align: center;
+    }
+
+    .service .service-description {
+        text-align: justify;
+    }
 }

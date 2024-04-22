@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section className="hero">
             <div className="hero-advertiser">
-                <h2 className="hero-title">Virtual healthcare for you</h2>
+                <h2 className="hero-title">Virtual healthcare for&nbsp;you</h2>
                 <p className="hero-text">
                 Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
                 </p>

@@ -10,8 +10,10 @@ export default function Customers() {
     const { imgSrc, name, job, comment } = customerData;  // simulator of React.useState()
     return (
         <section className="section-customers">
+            <img class="visibility bg-dots4" src="./src/static/dots4.png" alt="dots4" />
+            <img class="visibility bg-dots5" src="./src/static/dots5.png" alt="dots5" />
             <div className="customer-tablet">
-                <h3 className="customers-title">What our customers are saying</h3>
+                <h3 className="customers-title">What our customers are&nbsp;saying</h3>
                 <img className="img-separator" src={imgSeparator} alt="Image separator" />
                 <div className="div-customer-comment">
                     <div className="div-customer-profile">

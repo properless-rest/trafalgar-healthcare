@@ -5,7 +5,7 @@ import "./Article.css"
 export default function Article( { imgSrc, articleTitle, articleText, articleLink }  ) {
     return (
         <div className="div-article">
-            <img src={imgSrc} alt="Article image" />
+            <img className="article-image" src={imgSrc} alt="Article image" />
             <div className="article-textual">
                 <h4 className="article-title">{articleTitle}</h4>
                 <p className="article-text">{articleText}</p>    

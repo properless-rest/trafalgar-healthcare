@@ -8,7 +8,7 @@ import "./Providers.css";
 export default function Providers() {
     return (
         <section className="section-providers">
-            <img src={providersImage} alt="Image section providers"/>
+            <img className="providers-image" src={providersImage} alt="Image section providers"/>
             <div className="div-providers-advertiser">
                 <h3 className="providers-title">Leading healthcare providers</h3>
                 <img className="img-separator" src={rectangle} alt="Rectangle separator" />

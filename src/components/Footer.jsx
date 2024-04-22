@@ -14,7 +14,7 @@ export default function Footer() {
                 <p className="footer-description">
                     Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
                 </p>
-                <p className="footer-copyright">©Trafalgar PTY LTD 2024. All rights reserved</p>
+                <p className="footer-copyright">©Trafalgar PTY LTD 2024. All&nbsp;rights&nbsp;reserved</p>
             </div>
 
             <div className="column-company">

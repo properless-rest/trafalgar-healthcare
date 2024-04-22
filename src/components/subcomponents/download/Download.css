@@ -60,3 +60,110 @@
 .div-download-advertiser .download-btn:active {
     transform: scale(0.98);
 }
+
+
+@media screen and (max-width: 767.98px) {
+
+    .section-download {
+        grid-column-gap: initial;
+        margin-top: 60px;
+        margin-left: 0;
+    }
+
+    .section-download .div-download-advertiser {
+        max-width: initial;
+        margin-top: initial;
+    }
+
+    .div-download-advertiser .download-title {
+        max-width: initial;
+        margin-bottom: 12px;
+        text-align: center;
+        line-height: initial;
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    .div-download-advertiser .download-description {
+        padding: 5px;
+        text-align: justify;
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .div-download-advertiser .download-btn {
+        display: flex;
+        padding: 30px 60px;
+        margin: 20px auto 0;
+        font-size: 22px;
+    }
+
+    .div-download-advertiser .img-separator {
+        display: none;
+    }
+
+    .section-download .download-image {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+
+    .section-download {
+        display: flex;
+        grid-column-gap: 50px;
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+
+    .section-download .div-download-advertiser {
+        max-width: 600px;
+        margin-left: 0;
+    }
+
+    .div-download-advertiser .download-title {
+        max-width: 400px;
+    }
+
+    .div-download-advertiser .img-separator {
+        height: 3px;
+        margin: 15px 0;
+    }
+
+    .div-download-advertiser .download-description {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .div-download-advertiser .download-btn {
+        padding: 30px 60px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .section-download .download-image {
+        width: 320px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+
+    .section-download {
+        display: flex;
+        margin-top: 130px;
+        margin-left: 0;
+    }
+
+    .section-download .div-download-advertiser {
+        max-width: initial;
+        margin-top: 16px;
+    }
+
+    .div-download-advertiser .download-title {
+        max-width: initial;
+    }
+
+}

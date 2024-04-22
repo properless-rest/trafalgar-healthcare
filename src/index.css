@@ -63,7 +63,7 @@ img {
   z-index: 0;
 }
 
-.blob {
+.bg-blob {
   position: absolute;
   top: 965px;
   left: -265px;
@@ -81,7 +81,7 @@ img {
 /* bg-dots4 and bg-dots5 are inside Customers SubComponent */
 
 
-.blob2 {
+.bg-blob2 {
   position: absolute;
   top: 4250px;
   right: 0;

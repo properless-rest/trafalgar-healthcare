@@ -40,7 +40,7 @@ export default function Footer() {
                 <a className="footer-link" href="$">Instructions</a>
                 <a className="footer-link" href="$">How it works</a>
             </div>
-            <img class="visibility bg-dots8" src="./src/static/dots7.png" alt="dots8" />
+            <img class="visibility bg-dots8" src="figures/dots8.png" alt="dots8" />
         </footer>
     );
 }

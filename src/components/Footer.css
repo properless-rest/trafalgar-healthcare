@@ -200,7 +200,6 @@ footer .column-trafalgar {
 
     footer {
         height: initial;
-        width: 110%;
         display: flex;
         justify-content: space-between;
         grid-column-gap: 30px;

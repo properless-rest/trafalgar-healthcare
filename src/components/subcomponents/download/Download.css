@@ -155,6 +155,7 @@
         display: flex;
         margin-top: 130px;
         margin-left: 0;
+        grid-column-gap: 20px;
     }
 
     .section-download .div-download-advertiser {
